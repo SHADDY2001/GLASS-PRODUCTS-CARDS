@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+	text-decoration: none;
+	list-style: none;
+
+
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+}
+
+video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}	
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5em;
+	position: relative;
+
+}
+
+.container .card{
+	position: relative;
+	width: 320px;
+	height: 500px;
+	background: rgba(238,238, 238, 0.203);
+	border: 1px solid rgba(255, 255, 255, 0.135);
+	backdrop-filter: blur(30px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border-radius: 2em;
+	overflow: hidden;
+	z-index: 1;
+	transition: 0.3s;
+
+
+}
+
+.contentbox h2{
+	color: white;
+	font-weight: 500;
+
+
+}
+
+.contentbox h5{
+	color :white;
+	font-weight: 400;
+
+}
+
+.container .card:hover{
+	transform: translateY(-10px);
+
+}
+
+.container .card img{
+	position: relative;
+	width: 200px;
+
+}
+.container .card a{
+	padding: 5px 30px;
+	margin-top: 10px;
+	border-radius:1em;
+	color: white;
+	border:2px solid white;
+	transition: 0.3s ease;
+
+}
+
+.container .card a:hover{
+	background-color: white;
+	color: black;
+
+}
+
+.buy{
+	color: white;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+
+
+}
+
+.buy p{
+	color: white;
+	font-size: 20px;
+	font-weight: 900;
+
+}
+
+.buy a{
+	color: white;
+	position: relative;
+	top: -0.5em;
+}
